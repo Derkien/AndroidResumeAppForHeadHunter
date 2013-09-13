@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserResume" >
+
+    <EditText
+        android:id="@+id/user_resume_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/user_resume_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/user_resume_birth_hint"
+        android:inputType="datetime"
+        android:nextFocusDown="@+id/user_resume_sex"  
+        />
+
+	<ImageButton
+	android:id="@+id/imageButton1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignBottom="@+id/user_resume_birth"
+	android:layout_toRightOf="@+id/user_resume_birth"
+	android:contentDescription="@string/user_resume_birth_picker"
+	android:cropToPadding="true"
+	android:src="@drawable/ic_datepicker" 
+	android:onClick="showDatePickerDialog" />        
+	<!-- Button 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/pick_date" 
+    android:onClick="showDatePickerDialog" / -->
+
+    <EditText
+        android:id="@+id/user_resume_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/user_resume_name_hint"
+        android:inputType="textCapWords"
+        android:nextFocusDown="@+id/user_resume_birth" 
+        />
+
+    <Spinner
+        android:id="@+id/user_resume_sex"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_resume_birth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="@string/user_resume_sex_hint" 
+        android:nextFocusDown="@+id/user_resume_job"
+        />
+
+    <EditText
+        android:id="@+id/user_resume_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_resume_email"
+        android:layout_alignRight="@+id/user_resume_email"
+        android:layout_below="@+id/user_resume_salary"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/user_resume_phone_hint"
+        android:inputType="phone"
+        android:nextFocusDown="@+id/user_resume_email"
+        />
+
+    <EditText
+        android:id="@+id/user_resume_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_resume_job"
+        android:layout_alignRight="@+id/user_resume_job"
+        android:layout_below="@+id/user_resume_job"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/user_resume_salary_hint"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@+id/user_resume_phone"
+        />
+
+    <EditText
+        android:id="@+id/user_resume_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_resume_name"
+        android:layout_alignRight="@+id/user_resume_name"
+        android:layout_below="@+id/user_resume_sex"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/user_resume_job_hint"
+        android:inputType="textCapSentences"
+        android:nextFocusDown="@+id/user_resume_salary"
+        />
+
+    <EditText
+        android:id="@+id/user_resume_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_resume_salary"
+        android:layout_alignRight="@+id/user_resume_salary"
+        android:layout_below="@+id/user_resume_phone"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/user_resume_email_hint"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_resume_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/user_resume_save"
+        android:onClick="setDataToDb" 
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_resume_birth"
+        android:layout_alignRight="@+id/user_resume_birth"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="70dp"
+        android:onClick="sendResume"
+        android:text="@string/user_resume_send" />
+
+    <Button
+        android:id="@+id/user_resume_delete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="deleteResumeWithReturn"
+        android:text="@string/user_resume_delete" />
+
+</RelativeLayout>

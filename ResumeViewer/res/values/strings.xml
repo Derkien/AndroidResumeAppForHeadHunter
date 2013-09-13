@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Rviewer</string>
+	<string name="title_activity_view_user_resume">Просмотр резюме</string>
+	<string name="title_activity_resume_answs">Ответы на ваше резюме</string>
+	<string name="title_activity_user_resume">Ваше резюме</string>
+	<string name="title_activity_user">Вошли как пользователь</string>
+	<string name="title_activity_employer">Вошли как работодатель</string>
+    <string name="title_activity_show_dialog">Окно диалога</string>
+    <string name="title_activity_dialog">Выбрано резюме</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_1">Главное меню</string>
+    <string name="menu_1_bttn_1">Войти как пользователь</string>
+    <string name="menu_1_bttn_2">Войти как работодатель</string>
+    <string name="menu_2">Меню пользователя</string>
+    <string name="menu_2_bttn_1">Редактировать резюме</string>
+    <string name="menu_2_bttn_2">Отзывы работодателей</string>
+    <string name="recieved_r_title">Присланные резюме</string>
+    <string name="btn_finish_dialog_label">Close</string>
+    <string name="menu_answer">Ответить</string>
+    <string name="menu_view">Просмотр</string>
+    <string name="menu_delete">Удалить</string>
+
+    <string-array name="resume">
+        <item>resume1</item>
+        <item>resume2</item>
+        <item>resume3</item>
+    </string-array>
+
+    <string name="dialog_text">Simple Dialog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_resume_title">Ваше резюме</string>
+    <string name="user_resume_send">Отправить резюме</string>
+
+    <string-array name="user_resume_sex">
+        <item>Не задано</item>
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+    <string name="user_resume_name_hint">Фамилия Имя Отчество</string>
+    <string name="user_resume_birth_hint">ММ/ДД/ГГГГ</string>
+    <string name="user_resume_job_hint">Ваша должность</string>
+    <string name="user_resume_salary_hint">Желаемая зарплата</string>
+    <string name="user_resume_phone_hint">Телефон</string>
+    <string name="user_resume_email_hint">Email</string>
+    <string name="user_resume_sex_hint">Выберите пол</string>
+    <string name="user_resume_birth_picker">Выберите дату</string>
+    <string name="user_resume_save">Сохранить</string>
+    <string name="user_resume_delete">Удалить</string>
+    
+    <string name="user_birth">Дата рождения</string>
+    <string name="user_sex">Пол</string>
+    <string name="user_job">Должность</string>
+    <string name="user_money">Желаемая зарплата</string>
+    <string name="user_phone">Телефон</string>
+    <string name="user_email">E-mail</string>
+    <string name="answer_resume">Ответить на резюме</string>
+    <string name="name_here">Тут будет имя</string>
+    <string name="empty_hint">не задано</string>
+    
+    
+    <string name="answer_from">Ответ от:</string>
+    <string name="answer_time">Поступил:</string>
+    
+    <string name="resume_from">Резюме от:</string>
+    <string name="resume_time">Время:</string>
+    <string name="resume_email">Почта:</string>
+    
+
+</resources>
